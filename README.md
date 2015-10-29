@@ -1,2 +1,9 @@
 # chef-apache-ssl
-Simple configuration of Apache with SSL using Chef Solo and Vagrant
+Configuration of Apache with SSL using Chef Solo, Vagrant, Berkshelf
+
+To Run
+------
+```berks install```
+
+```vagrant up```
+
