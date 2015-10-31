@@ -3,15 +3,7 @@
   "description": "Installs Apache with SSL",
   "chef_type": "role",
   "json_class": "Chef::Role",
-  "override_attributes": {
-    "apache": {
-      "listen": {
-        "*": ["80", "443"]
-      }
-    }
-  },
   "run_list": [
-    "recipe[apache2]",
-    "recipe[apache2::mod_ssl]"
+    "recipe[default-ssl]"
   ]
 }
