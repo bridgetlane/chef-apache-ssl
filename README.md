@@ -4,4 +4,5 @@ Configures the default Apache website with SSL using Chef Solo, Vagrant, Berkshe
 To Run
 ------
 ```berks install```
+
 ```vagrant up```
