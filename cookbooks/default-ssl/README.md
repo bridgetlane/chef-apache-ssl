@@ -4,6 +4,15 @@ Enables the default SSL apache webpage. Uses the self-signed certs created by th
 - `/etc/ssl/certs/ssl-cert-snakeoil.pem`
 - `/etc/ssl/private/ssl-cert-snakeoil.key`
 
+To use your own certification, set `node['default-ssl']['data_bags']` to `true`. The data bag should be named `keys` and the data bag item should be `keys`. Example data bag:
+
+```json
+{
+  "id": "keys",
+  "certificate": "derp_certificate",
+  "key": "derp_private_key"
+}
+```
 
 Requirements
 ------------

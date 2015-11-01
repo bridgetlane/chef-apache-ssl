@@ -3,6 +3,11 @@
   "description": "Installs Apache with SSL",
   "chef_type": "role",
   "json_class": "Chef::Role",
+  "override_attributes": {
+    "default-ssl": {
+      "data_bags": true
+    }
+  },
   "run_list": [
     "recipe[default-ssl]"
   ]
